@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS names;
 
 CREATE TABLE names (
  id int unsigned AUTO_INCREMENT,
