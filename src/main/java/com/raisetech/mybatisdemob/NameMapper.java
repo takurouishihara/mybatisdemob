@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 @Mapper
-public class NameMapper {
+public interface NameMapper {
     @Select("SELECT*FROM names")
     List<Name> findAll();
 
