@@ -1,11 +1,12 @@
 package com.raisetech.mybatisdemob;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
-
-public class NameMapper {
+@Mapper
+public interface NameMapper {
     @Select("SELECT*FROM names")
-    List<name> findAll();
+    List<Name> findAll();
 
 }
